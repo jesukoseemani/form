@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Practiced Form Validation</title>
+</head>
+<body>
+  <div class="container">
+    <form>
+    <label for="username">Username:</label>
+    <input type="text" name="username"
+   placeholder="Username" 
+   id="username">
+   <p class="m-name alert">Your Username must be less than 20 or more 8 Characters<br>
+   Your username can have one to three digits and one non non-alphanumeric</p>
+    
+   <label for="password">Password:</label>
+    <input type="password" name="password"
+   placeholder="Password"
+   id="password">
+   <p class="m-password alert">Your password must be more than 6 Characters,<br>
+    Your password must contain atleast 1 capital letter,<br>
+    Your password must contain atleast 1 small letter,<br>
+    Your password must contain atleast 1 digit,<br>
+    Your password must contain atleast 1 non-alphanumeric</p>
+   
+   <label for="re-password">Re-password:</label>
+    <input type="password" name="re-password"
+   placeholder="Re-password" 
+   id="re-password">
+   <p class="m-re-password alert">Your password does not match</p>
+   
+   <label for="phone">PhoneNumber:</label>
+    <input type="number" name="number"
+   placeholder="PhoneNumber" 
+   id="Phone-number">
+   <p class="m-phone alert">Your Phone-number must be less than 11 digits. </p>
+   
+   <label for="Zip-code">Zipcode:</label>
+    <input type="text" name="zipcode"
+   placeholder="Zipcode" 
+   id="zip-code">
+   <p class="m-zipcode alert">Your zip-code must be more than 3 digits and less than 6 digits</p>
+   
+   <label for="email"> Email:</label>
+    <input type="email" name="email"
+   placeholder="email"
+   id="email">
+   <p class="m-email alert">Your email is not valid</p>
+   
+   <label for="date"> D.O.B:</label>
+    <input type="date" name="date"
+   placeholder="date"
+   id="date">
+
+
+    <input type="submit" value="submit" id="submit">
+    </form>
+  </div>
+  <script src="app.js"></script>
+</body>
+</html>
